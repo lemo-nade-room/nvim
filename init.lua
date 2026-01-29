@@ -30,6 +30,7 @@ dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
 require "options"
+vim.opt.clipboard:remove({ "unnamed", "unnamedplus" })
 require "autocmds"
 
 vim.schedule(function()
